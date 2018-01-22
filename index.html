@@ -1,19 +1,30 @@
 <html>
     <head>
       <title>Invie</title>
-      <style>
+      <style media="screen">
         body {
           margin: 0;
-          border : 10px solid #192b36;
         }
         img {
           max-width: 100%;
           vertical-align: top;
         }
+        img#responsive {
+          display: none;
+        }
+        @media screen and (max-width: 768px) {
+          img#responsive {
+            display: block;
+          }
+          img {
+            display: none
+          }
+        }
       </style>
     </head>
     <body>
       <center>
+        <img src="invie-responsive.png" id="responsive" alt="">
         <img src="header.jpg" alt="">
         <img src="hero.jpg" alt="">
         <img src="acustica.jpg" alt="">
